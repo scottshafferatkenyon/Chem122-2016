@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>JSmol -- Jmol/HTML5 Demo</title>
-	<script type="text/javascript" src="../jsmol/JSmol.min.js"></script>
+	<script type="text/javascript" src="./jsmol/JSmol.min.js"></script>
 
 	<script type="text/javascript">
 		
@@ -27,13 +27,13 @@
 			color: "0x111122",
 			addSelectionOptions: false, // creates search console
 			use: "HTML5",   // JAVA HTML5 WEBGL are all options
-					j2sPath: "../jsmol/j2s", // this needs to point to where the j2s directory is.
-					jarPath: "../jsmol/java",// this needs to point to where the java directory is.
+					j2sPath: "./jsmol/j2s", // this needs to point to where the j2s directory is.
+					jarPath: "./jsmol/java",// this needs to point to where the java directory is.
 			jarFile: "JmolAppletSigned.jar",
 			isSigned: true,
 					script: "set zoomlarge false;set antialiasDisplay;load ./jsmol/data/caffeine.mol",
 			//	serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			serverURL: "../jsmol/php/jsmol.php",
+			serverURL: "./jsmol/php/jsmol.php",
 			readyFunction: jmol_isReady,
 			disableJ2SLoadMonitor: true,
 	  	disableInitialConsole: true,
