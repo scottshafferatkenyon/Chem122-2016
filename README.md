@@ -36,7 +36,7 @@ This repository was cloned to your workspace from GitHub. To see this, use the `
 
 ```bash
     $ ls
-#   README.md    orbitals/    setup.sh    shape/    vsepr/    welcome/
+#   README.md    orbitals/    shape/    vsepr/    welcome/
 ```
 
 To see what's in the `welcome` folder, you can "change directory" using the `cd` command; and then list its contents using `ls`. You should see a single file named `primera.md`. You can view the contents of this file (and of any text-based file) using the `c9 open` command.
