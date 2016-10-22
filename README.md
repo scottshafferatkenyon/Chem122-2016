@@ -36,10 +36,10 @@ This repository was cloned to your workspace from GitHub. To see this, use the `
 
 ```bash
     $ ls
-#   README.md    orbitals/    shape/    vsepr/    welcome/
+#   JSME/  README.md  caffeine.htm  jsmol/  orbitals/  shape/  vsepr/  welcome/
 ```
 
-To see what's in the `welcome` folder, you can "change directory" using the `cd` command; and then list its contents using `ls`. You should see a single file named `primera.md`. You can view the contents of this file (and of any text-based file) using the `c9 open` command.
+To see what's in the `welcome/` folder, you can "change directory" using the `cd` command; and then list its contents using `ls`. You should see a single file named `primera.md`. You can view the contents of this file (and of any text-based file) using the `c9 open` command.
 
 ```bash
     $ cd welcome
@@ -48,7 +48,7 @@ To see what's in the `welcome` folder, you can "change directory" using the `cd`
     $ c9 open primera.md
 ```
 
-Close the file. Now copy this file using the `cp` command, giving it a new name of `segunda.md`. Use `ls` to verify there are now two files. Open the new file.
+Close the file (**File > Close File** or click x in the tab). Now copy this file using the `cp` command, giving it a new name of `segunda.md`. Use `ls` to verify there are now two files. Open the new file.
 
 ```bash
     $ cp primera.md segunda.md
