@@ -13,10 +13,10 @@ Before you start, make sure you have cloned the entire `Chem122-2016` repository
 
 ## Start a JSmol web app
 
-Change into the directory `vsepr`. List its contents and confirm that the file `JSMol.html` exists. Open this file using the command `c9 open`.
+Change into the directory `orbitals`. List its contents and confirm that the file `JSMol.html` exists. Open this file using the command `c9 open`.
 
 ```bash
-    $ cd vsepr
+    $ cd orbitals
     $ ls
     $ c9 open JSMol.html
 ```
