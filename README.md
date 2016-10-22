@@ -65,4 +65,10 @@ To return to the parent folder, use `cd` again. In Linux, double periods `..` re
     $ cd ..
 ```
 
-Congratulations! You are in control of your very own Linux machine! You can now work on the visualization exercises in the other directories (`vsepr`, `shape`, etc). Enjoy!
+Congratulations! You are in control of your very own Linux machine! You can now work on the visualization exercises in the other directories (`vsepr`, `shape`, etc). Each directory has a Markdown file with step-by-step instructions:
+
+- Viewing molecular models: [vsepr/vsepr.md](vsepr/vsepr.md)
+- Generating molecular models: [shape/shape.md](shape/shape.md)
+- Viewing molecular orbitals: [orbitals/orbitals.md](orbitals/orbitals.md)
+
+Enjoy!
