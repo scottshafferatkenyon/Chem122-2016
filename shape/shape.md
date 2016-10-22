@@ -78,7 +78,11 @@ Run the same command again, but use `>` at the end to send the output to a new f
 Switch to the tab running JSMol. Use the `Preview` command in the Cloud9 menu to restart the web app and load the new molecule; you should now see ethane. Rotate the molecule and observe its appearance from different perspectives. 
 
 
-## Exercise
+## Exercise: alkanes
 
-Load each of the Molfiles in `vsepr/`. Follow the directions in class for orienting each molecule and then sketching it.
+Draw the molecules below, generate their SMILES strings , and generate coordinates in Molfiles. Display each using JSMol and follow the directions in class for orienting each molecule and then sketching it.
+
+- ethane: CH<sub>3</sub>CH<sub>3</sub>
+- propane: CH<sub>3</sub>CH<sub>2</sub>CH<sub>3</sub>
+- butane: CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub>
 
