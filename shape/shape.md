@@ -34,11 +34,15 @@ JSMol for this project is configured to load any molecule in the file `current.j
 Switch to the tab running JSMol. Use the `Preview` command in the Cloud9 menu to restart the web app and load the new molecule; you should now see ethane. Rotate the molecule and observe its appearance from different perspectives. 
 
 
-## Exercise: alkanes
+## Exercise: generating the structure of alkanes
 
-Draw the molecules below, generate their JME strings, and display each one using JSMol. Follow the directions in class for orienting each molecule and then sketching it.
+Draw the molecules below, generate their JME strings, and display each one using JSMol. 
 
 - ethane: CH<sub>3</sub>CH<sub>3</sub>
 - propane: CH<sub>3</sub>CH<sub>2</sub>CH<sub>3</sub>
 - butane: CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub>
 
+
+## Exercise: sketching alkanes
+
+Follow the directions in class for orienting each molecule and then sketching it.
