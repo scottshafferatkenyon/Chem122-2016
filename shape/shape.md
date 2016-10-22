@@ -12,15 +12,15 @@ Before you start, make sure you have cloned the entire `Chem122-2016` repository
 
 ## Start the JSME web app
 
-Change into the directory `shape`. List its contents and confirm that two files are there: `JSME.html` and `display.htm`. Open them both.
+Change into the directory `shape`. List its contents and confirm that two files are there: `JSME.html` and `JSMol.html`. Open them both.
 
 ```bash
     $ cd shape
     $ ls
-    $ c9 open display.htm JSME.html 
+    $ c9 open JSMol.html JSME.html 
 ```
 
-The code in `display.htm` defines a web app called JSMol. To run it, go to the Cloud9 menu and click **Preview > Live Preview file**. This should cause a mini browser to appear in another pane and display the web app. By default, it should display a 3D representation of water. Resize the pane to ensure you can see the entire molecule.
+The code in `JSMol.html` defines a web app called JSMol. To run it, go to the Cloud9 menu and click **Preview > Live Preview file**. This should cause a mini browser to appear in another pane and display the web app. By default, it should display a 3D representation of water. Resize the pane to ensure you can see the entire molecule.
 
 `JSME.html` is another web app called the **JavaScript Molecular Editor**. Run this one as well, it should create a browser in another tab.
 

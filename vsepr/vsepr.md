@@ -10,12 +10,12 @@ Before you start, make sure you have cloned the entire `Chem122-2016` repository
 
 ## Start a JSmol web app
 
-Change into the directory `vsepr`. List its contents and confirm that the file `display.htm` exists. Open the html file `display.htm`.
+Change into the directory `vsepr`. List its contents and confirm that the file `JSMol.html` exists. Open this file using the command `c9 open`.
 
 ```bash
     $ cd vsepr
     $ ls
-    $ c9 open display.htm
+    $ c9 open JSMol.html
 ```
 
 The code in this file defines a web app called JSMol. To run it, go to the Cloud9 menu and click **Preview > Live Preview file**. This should cause a mini browser to appear in another pane and display the web app. By default, it should display a 3D representation of water. Resize the pane to ensure you can see the entire molecule.
