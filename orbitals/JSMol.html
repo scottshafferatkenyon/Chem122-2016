@@ -31,7 +31,7 @@
 					jarPath: "../jsmol/java",// this needs to point to where the java directory is.
 			jarFile: "JmolAppletSigned.jar",
 			isSigned: true,
-			script: "set zoomlarge false;set antialiasDisplay;load ./current.out;center;color atoms translucent 0.25;mo 10;mo translucent 0.4;set axes on",
+			script: "set zoomlarge false;set antialiasDisplay;load ./current.out;center;color atoms translucent 0.25;mo 1;mo resolution 8;mo translucent 0.4;set axes on",
 			//	serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
 			serverURL: "../jsmol/php/jsmol.php",
 			readyFunction: jmol_isReady,
