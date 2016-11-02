@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Chem122-2016 by garcias</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Chem122-2016</h1>
+          <h2>Code and exercises for Visualization in Chem 122</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/garcias/Chem122-2016/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/garcias/Chem122-2016/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/garcias/Chem122-2016" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="chem122-2016" class="anchor" href="#chem122-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Chem122-2016</h1>
+
+<p>This repository contains visualization exercises for <em>Chemical Principles 2016</em> (Chem 122) at Kenyon College, along with the code necessary to do them.</p>
+
+<p>These exercises assume that you have a Cloud9 account and a Linux workspace ready to go. <a href="https://c9.io">Cloud9</a> is a cloud-based computing environment. It allows you to control a remote Linux workspace through a browser-based web app called the Cloud9 IDE. </p>
+
+<h2>
+<a id="getting-started-with-cloud9" class="anchor" href="#getting-started-with-cloud9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting started with Cloud9</h2>
+
+<p>You will receive an email invitation to join the <code>chem122</code> team at Cloud9. Accept the invitation and select <strong>Create new account</strong>. Select a display name, a username, and identify as a <strong>student</strong> doing <strong>coursework</strong>. You should <em>not</em> be asked for a credit card. Finish by selecting <strong>Join team</strong>. Check your email and click the activation link to set your password.</p>
+
+<p>At your dashboard, click <strong>Workspaces &gt; Create a new workspace</strong>. Set the following options:</p>
+
+<ul>
+<li>Workspace name: <code>vsepr</code>
+</li>
+<li>Team: <code>Chemical Principles</code>
+</li>
+<li>Hosted workspace: <strong>Public</strong>
+</li>
+<li>Clone from Git URL: <code>https://github.com/garcias/Chem122-2016.git</code>
+</li>
+<li>Choose a template: <strong>Blank</strong>
+</li>
+</ul>
+
+<p>After a few minutes, Cloud9 will present a layout with a few tabs. Click through the guided tour, reading the comments if you are curious. Close the <code>README.md</code> tab to view the <code>Welcome</code> tab. Set the following options:</p>
+
+<ul>
+<li>Preset: <strong>Full IDE</strong>
+</li>
+<li>Main Theme: <em>light or dark, whichever is easiest on your eyes</em>
+</li>
+<li>Split Layout: <strong>Two Horizontal Split</strong>
+</li>
+<li>Editor Theme: <em>your preference, though Cloud9, Solarized, and Tomorrow themes are popular</em>
+</li>
+<li>Keyboard Mode: <strong>Default</strong> (unless you have a preference for Vim or Sublime)</li>
+<li>Soft Tabs: <code>4</code>
+</li>
+</ul>
+
+<p>Close the <code>Welcome</code> tab.</p>
+
+<h2>
+<a id="guided-tour-of-using-your-workspace" class="anchor" href="#guided-tour-of-using-your-workspace" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Guided tour of using your workspace</h2>
+
+<p>In the lines below, the <code>$</code> represents the end of the terminal prompt; type only the text after the <code>$</code>. Lines starting with <code>#</code> indicate the computer's response to your command. In Linux, upper and lower case make a difference, as do spaces.</p>
+
+<p>This repository was cloned to your workspace from GitHub. To see this, use the <code>ls</code> command in the terminal window. The terminal should display a listing of the same files and folders as on the Github page.</p>
+
+<div class="highlight highlight-source-shell"><pre>    $ ls
+<span class="pl-c">#   JSME/  README.md  caffeine.htm  jsmol/  orbitals/  shape/  vsepr/  welcome/</span></pre></div>
+
+<p>To see what's in the <code>welcome/</code> folder, you can "change directory" using the <code>cd</code> command; and then list its contents using <code>ls</code>. You should see a single file named <code>primera.md</code>. You can view the contents of this file (and of any text-based file) using the <code>c9 open</code> command.</p>
+
+<div class="highlight highlight-source-shell"><pre>    $ <span class="pl-c1">cd</span> welcome
+    $ ls
+<span class="pl-c">#   primera.md</span>
+    $ c9 open primera.md</pre></div>
+
+<p>Close the file (<strong>File &gt; Close File</strong> or click x in the tab). Now copy this file using the <code>cp</code> command, giving it a new name of <code>segunda.md</code>. Use <code>ls</code> to verify there are now two files. Open the new file.</p>
+
+<div class="highlight highlight-source-shell"><pre>    $ cp primera.md segunda.md
+    $ ls
+<span class="pl-c">#   primero.md    segunda.md</span>
+    $ c9 open segunda.md</pre></div>
+
+<p>Change its text however you like, and then save it. You can use either the Cloud9 menu (<strong>File &gt; Save</strong>) or a keyboard shortcut (ctrl-S on Windows, cmd-S on Mac).</p>
+
+<p>To return to the parent folder, use <code>cd</code> again. In Linux, double periods <code>..</code> refers to the "parent directory" of the current one.</p>
+
+<div class="highlight highlight-source-shell"><pre>    $ <span class="pl-c1">cd</span> ..</pre></div>
+
+<p>Congratulations! You are in control of your very own Linux machine! You can now work on the visualization exercises in the other directories (<code>vsepr</code>, <code>shape</code>, etc). Each directory has a Markdown file with step-by-step instructions:</p>
+
+<ul>
+<li>Viewing molecular models: <a href="vsepr/vsepr.md">vsepr/vsepr.md</a>
+</li>
+<li>Generating molecular models: <a href="shape/shape.md">shape/shape.md</a>
+</li>
+<li>Viewing molecular orbitals: <a href="orbitals/orbitals.md">orbitals/orbitals.md</a>
+</li>
+</ul>
+
+<p>Enjoy!</p>
+        </section>
+
+        <footer>
+          Chem122-2016 is maintained by <a href="https://github.com/garcias">garcias</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
