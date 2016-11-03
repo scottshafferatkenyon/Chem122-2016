@@ -1,8 +1,8 @@
 # Electronic structure of molecules
 
-The shape of electrons in a molecule is 
+According to quantum theory, each electron can spread itself out over all the nuclei in a molecule, often with a distinctive shape. Each shape, which is defined mathematically by a *wavefunction*, determines a portion of the molecule's energy. There are two qualitative trends: (a) larger, extensive shapes tend to have lower energy, and (b) shapes with more nodes tend to have higher energy. 
 
-Most molecules consist of several atoms connected in a particular network **architecture**, with chains, rings, branches, cages, or some combination thereof. While each center has its own local geometry, these may combine to form a complex molecular **shape**. In this tutorial, you will:
+In this tutorial, you will:
 
 - load the output of a QM calculation with JSmol
 - display the isosurface of a molecular orbital
