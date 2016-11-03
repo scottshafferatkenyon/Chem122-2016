@@ -31,7 +31,7 @@ You can control the JSMol display using its internal menu. Right-click or Contro
 
 ## Display a different molecule
 
-This version of the web app always loads the file `current.out` in the `orbitals/` directory. This is a **GAMESS output** file that was produced by a quantum-mechanical calculation of a molecule's electronic structure. It contains the coordinates of the desired molecule and the shape of each molecular orbital. To display a different molecule, copy its `.out` file to `current.out` using the terminal.
+This version of the web app always loads the file `current.out` in the `orbitals/` directory. This is a **GAMESS output** file that was produced by a [quantum-mechanical calculation](https://github.com/garcias/build-gamess#build-gamess) of a molecule's electronic structure. It contains the coordinates of the desired molecule and the shape of each molecular orbital. To display a different molecule, copy its `.out` file to `current.out` using the terminal.
 
 Use the `ls` command to find out what `.out` files are available. One of them should be `N2.out`, which contains coordinates for N<sub>2</sub>. Copy it to `current.out`.
 
