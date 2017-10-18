@@ -46,9 +46,6 @@ Draw the molecules below, generate their SMILES strings, and display each one us
 - propane: CH<sub>3</sub>CH<sub>2</sub>CH<sub>3</sub>
 - butane: CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub>
 - 2-methylbutane: (CH<sub>3</sub>)<sub>2</sub>CH<sub></sub>CH<sub>2</sub>CH<sub>3</sub> *(This is based on butane, except you replace a H with a methyl group (CH<sub>3</sub>) branching at the 2nd C atom.)*
-- isobutanol: (CH<sub>3</sub>)<sub>2</sub>CH<sub></sub>CH<sub>2</sub>CH<sub>2</sub>OH *(This is based on 2-methylbutane, except you replace a H with a hydroxyl group (–OH) at the end of the chain.)*
-
-
-## Exercise: sketching alkanes
+- isobutanol: (CH<sub>3</sub>)<sub>2</sub>CH<sub></sub>CH<sub>2</sub>CH<sub>2</sub>OH *(This is based on 2-methylbutane, except you replace a H with a hydroxyl group (–OH) at the end of the chain.)
 
 Follow the directions in class for orienting each molecule and then sketching it.
