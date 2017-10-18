@@ -10,7 +10,7 @@ Before you start, make sure you have cloned the entire `Chem122-2016` repository
 
 ## Start a JSmol web app
 
-Change into the directory `vsepr`. List its contents and confirm that the file `jsmol-console.html` exists. Open this file using the command `c9 open`.
+Change into the directory `vsepr`. List its contents and confirm that the file `jmol-console.html` exists. Open this file using the command `c9 open`.
 
 ```bash
     $ cd vsepr
@@ -28,7 +28,7 @@ Click and drag on the web app, which rotates the molecule out of the plane of th
 
 ## Save a static image
 
-Rotate the molecule until you like the perspective. In the Jmol console to the right, enter the command `write image water.png". JSMol will generate an image and prompt you to download to your computer (if you want). 
+Rotate the molecule until you like the perspective. In the Jmol console to the right, enter the command `write image water.png`. JSMol will generate an image and prompt you to download to your computer (if you want). 
 
 
 ## Displaying a different molecule
