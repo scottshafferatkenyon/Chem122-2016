@@ -67,12 +67,17 @@ To return to the parent folder, use `cd` again. In Linux, double periods `..` re
 
 ## Installing molvis-tools
 
-Some of the exercises rely on Jmol code in the **molvis-tools** repository. make sure you are in the `workspace` directory and then clone the repository from GitHub:
+Some of the exercises require a web app called JSMol, which relies on Jmol server code in the **molvis-tools** project. make sure you are in the `workspace` directory and then clone the repository from GitHub. Then open the file `test.html`, which defines code for a web app that uses **molvis-tools**.
 
 ```bash
     $ cd ~/workspace
     $ git clone https://github.com/garcias/molvis-tools.git
+    $ c9 open test.html    
 ```
+
+To test that the installation was successful, run `test.html`. To run it, go to the Cloud9 menu and select **Run > Run with... > Apache**; or click the **Run** button if it is available. This should cause a new console to appear, with the message `Starting Apache httpd, serving ...` and showing a link. Click on the link and open it (or copy and paste the link into a new tab. A new browser tab should open and display the web app. By default, it should show a 3D representation of caffeine. 
+
+Click and drag on the web app, which rotates the molecule out of the plane of the screen. Hold down the option key and click-drag left-to-right; this should rotate the molecule in the plane of the screen. Finally, hold down the shift key and click-drag up and down; this should zoom in and out. Once you have confirmed these operations work, you may close the browser tab. Close the console that showed you the link; doing so will shut down the web app.
 
 ## Closing
 
