@@ -10,16 +10,16 @@ Before you start, make sure you have cloned the entire `Chem122-2016` repository
 
 ## Start a JSmol web app
 
-Change into the directory `vsepr`. List its contents and confirm that the file `JSMol.html` exists. Open this file using the command `c9 open`.
+Change into the directory `vsepr`. List its contents and confirm that the file `jsmol-console.html` exists. Open this file using the command `c9 open`.
 
 ```bash
     $ cd vsepr
     $ ls
-    $ c9 open JSMol.html
+#   CH4.mol  NH3.mol  NO2.mol  NO3.mol  OCN.mol  PCl5.mol  SF4.mol  SF6.mol  XeF4.mol  jmol-console.html  vsepr.md  water.mol    
+    $ c9 open jmol-console.html
 ```
 
-The code in this file defines a web app called JSMol. To run it, go to the Cloud9 menu and click **Preview > Live Preview file**. This should cause a mini browser to appear in another pane and display the web app. By default, it should display a 3D representation of water. Resize the pane to ensure you can see the entire molecule.
-
+The code in this file defines a web app called JSMol. To run it, go to the Cloud9 menu and select **Run > Run with... > Apache**; or click the **Run** button if it is available. This should cause a new console to appear, with the message `Starting Apache httpd, serving ...` and showing a link. Click on the link and open it (or copy and paste the link into a new tab. A new browser tab should open and display the web app. By default, it should show a 3D representation of caffeine. 
 
 ## Rotate a molecule in JSMol
 
@@ -28,22 +28,18 @@ Click and drag on the web app, which rotates the molecule out of the plane of th
 
 ## Save a static image
 
-Rotate the molecule until you like the perspective. Right click on the web app; a menu should drop down. Click **File > Export > Export PNG image**. JSMol will generate an image that you may download to your computer if you like. 
+Rotate the molecule until you like the perspective. In the Jmol console to the right, enter the command `write image water.png". JSMol will generate an image and prompt you to download to your computer (if you want). 
 
 
 ## Displaying a different molecule
 
-This version of the web app always loads the file `current.mol` in the `vsepr` directory. This is a **Molfile**, which contains coordinates of the desired molecule. To display a different molecule, you simply copy its Molfile to `current.mol` using the terminal.
+The `vsepr` directory contains several files with a `.mol` ending. They are **Molfile**s, each containing the coordinates of a molecule. For example `OCN.mol` contains coordinates for OCN<sup>-</sup>. You can display the molecule in any file by using the `load` command with any Molfile in the Jmol console to the right of the display. 
 
-Use the `ls` command to find out what Molfiles are available. One of them should be `OCN.mol`, which contains coordinates for OCN<sup>-</sup>. Copy it to `current.mol`.
-
-```bash
-    $ ls
-    $ cp OCN.mol current.mol
+```Java
+    load OCN.mol
 ```
 
-Then use the `Preview` command in the Cloud9 menu to restart the web app and load the new molecule.
-
+(If in doubt, switch back to the Cloud9 console and use `ls` to find out what Molfiles are available.)
 
 ## Exercise
 

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-color: #888888;
+		}
+	</style>
+	<meta charset="utf-8">
+	<title>JSmol -- Jmol/HTML5 Demo</title>
+	<script type="text/javascript" src="../molvis-tools/jsmol/JSmol.min.js"></script>
+
+	<script type="text/javascript">
+		
+		userOptions = {
+			width:  1200,
+			height: 800,
+			color: "0xE0D0C0",
+				// neutral beige: "0xE0D0C0"
+				// solarized light: "0xEEE8D5"
+				// neutral gray: "0x888888"
+				// solarized dark: "0x586E75"
+		}
+		
+		// path to file you want to load
+		// molFile = "./molvis-tools/jsmol/data/caffeine.mol"
+		molFile = "./water.mol"
+
+		Jmol._isAsync = false;
+		
+		var jmolApplet0; // set up in HTML table, below
+		
+		var s = document.location.search;
+		
+		Jmol._debugCode = (s.indexOf("debugcode") >= 0);
+		
+		jmol_isReady = function(applet) {
+			document.title = (applet._id + " - Jmol " + Jmol.___JmolVersion)
+			Jmol._getElement(applet, "appletdiv").style.border="1px solid blue"
+		}		
+
+		var Info = {
+			width: userOptions.width  * 2/3,
+			height:userOptions.height * 1,
+			debug: false,
+			color: userOptions.color, 
+			addSelectionOptions: false, // creates search console
+			use: "HTML5",   // JAVA HTML5 WEBGL are all options
+					j2sPath: "../molvis-tools/jsmol/j2s", // this needs to point to where the j2s directory is.
+					jarPath: "../molvis-tools/jsmol/java",// this needs to point to where the java directory is.
+			jarFile: "JmolAppletSigned.jar",
+			isSigned: true,
+					script: "console;set zoomlarge false;set antialiasDisplay;load " + molFile + ";center",
+			//	serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+			serverURL: "../molvis-tools/jsmol/php/jsmol.php",
+			readyFunction: jmol_isReady,
+			disableJ2SLoadMonitor: true,
+	  	disableInitialConsole: true,
+		  allowJavaScript: true,
+			//defaultModel: "$dopamine",
+			//console: "none", // default will be jmolApplet0_infodiv, but you can designate another div here or "none"
+		}
+
+		$(document).ready(function() {
+			$("#appdiv").html(Jmol.getAppletHtml("jmolApplet0", Info))
+
+			// SG: Yes, using setTimeout is really, really hacky, but is the 
+			// only way to ensure console is created before trying to modify it.
+			// Sorry.
+
+			setTimeout( function() {
+				$('#jmolApplet0_console')
+					.css({
+						'width' : "auto",
+						'top' : "0px",
+						'left' : "0px",
+						'background-color' : "gray",
+					});
+				$('#jmolApplet0_console_title').remove();
+				$('#jmolApplet0_console_label1').remove();
+				$('#jmolApplet0_console_buttondiv').remove();
+				$('#jmolApplet0_console_inputdiv').prependTo('#jmolApplet0_console');
+				$('#jmolApplet0_console_output').css({
+					'height' : 3/4 * userOptions.height + "px",
+					'width' :  1/3 * userOptions.width +  "px",
+					'background-color' : "gray",
+					'font-family': "Menlo, monospace",
+					'font-size': userOptions.width / 100 + "px",
+				});
+				$('#jmolApplet0_console_input').css({
+					'height' : 1/4 * userOptions.height + "px",
+					'width' :  1/3 * userOptions.width  + "px",
+					'background-color' : "#AA8866",
+					'font-family': "Menlo, monospace",
+					'font-size': userOptions.height / 40 + "px",
+					'color' : "#333333",
+				});
+   			}, 200);
+		});
+		var lastPrompt = 0;
+	</script>
+</head>
+
+
+<body>
+	<table width=600 cellpadding=0>
+		<tr>
+			<td valign="top">
+				<div id="appdiv"></div>	
+				<!-- the actual JSmol view -->
+			</td>
+			<td class="console-container">
+				<div id="jmolApplet0_console" class="jmolConsole" style="display: block; z-index: 100008; position: relative; height: auto; width: auto; top: 0px; left: 0px; background-color: gray;">
+					<div id="jmolApplet0_console_inputdiv" style="position:relative;left:2px">
+						<textarea id="jmolApplet0_console_input" style="height: 200px; width: 400px; background-color: rgb(170, 136, 102); font-family: Menlo, monospace; font-size: 1.2em; color: rgb(51, 51, 51);"></textarea>
+					</div>
+					<div id="jmolApplet0_console_outputdiv" style="position:relative;left:2px">
+						<textarea id="jmolApplet0_console_output" style="height: 600px; width: 400px; background-color: gray; font-family: Menlo, monospace; font-size: 0.7em;"></textarea>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
