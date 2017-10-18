@@ -1,6 +1,6 @@
-# Chem122-2016
+# Chem122-2017
 
-This repository contains visualization exercises for *Chemical Principles 2016* (Chem 122) at Kenyon College, along with the code necessary to do them.
+This branch of the repository contains visualization exercises for *Chemical Principles 2017* (Chem 122) at Kenyon College, along with the code necessary to do them.
 
 These exercises assume that you have a Cloud9 account and a Linux workspace ready to go. [Cloud9](https://c9.io) is a cloud-based computing environment. It allows you to control a remote Linux workspace through a browser-based web app called the Cloud9 IDE. 
 
@@ -65,10 +65,21 @@ To return to the parent folder, use `cd` again. In Linux, double periods `..` re
     $ cd ..
 ```
 
+## Installing molvis-tools
+
+Some of the exercises rely on Jmol code in the **molvis-tools** repository. make sure you are in the `workspace` directory and then clone the repository from GitHub:
+
+```bash
+    $ cd ~/workspace
+    $ git clone https://github.com/garcias/molvis-tools.git
+```
+
+## Closing
+
 Congratulations! You are in control of your very own Linux machine! You can now work on the visualization exercises in the other directories (`vsepr`, `shape`, etc). Each directory has a Markdown file with step-by-step instructions:
 
 - Viewing molecular models: [vsepr/vsepr.md](vsepr/vsepr.md)
 - Generating molecular models: [shape/shape.md](shape/shape.md)
 - Viewing molecular orbitals: [orbitals/orbitals.md](orbitals/orbitals.md)
 
-Enjoy!
+To view any of them, `cd` into the desired directory and `c9 open` the file. Enjoy!
