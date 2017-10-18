@@ -33,10 +33,11 @@ Rotate the molecule until you like the perspective. In the Jmol console to the r
 
 ## Displaying a different molecule
 
-The `vsepr` directory contains several files with a `.mol` ending. They are **Molfile**s, each containing the coordinates of a molecule. For example `OCN.mol` contains coordinates for OCN<sup>-</sup>. You can display the molecule in any file by using the `load` command with any Molfile in the Jmol console to the right of the display. 
+The `vsepr` directory contains several files with a `.mol` ending. They are **Molfile**s, each containing the coordinates of a molecule. For example `OCN.mol` contains coordinates for OCN<sup>-</sup>. You can display the molecule in any file by using the `load` command with any Molfile in the Jmol console to the right of the display. Use the `centerat` command to set the origin to the center of gravity (i.e., average) of the molecule.
 
 ```Java
     load OCN.mol
+    centerat average
 ```
 
 (If in doubt, switch back to the Cloud9 console and use `ls` to find out what Molfiles are available.)
