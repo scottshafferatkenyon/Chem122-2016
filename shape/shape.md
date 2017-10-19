@@ -47,8 +47,7 @@ Draw the molecules below, generate their SMILES strings, and display each one us
 - butane: CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub>
 - 2-methylbutane: (CH<sub>3</sub>)<sub>2</sub>CH<sub></sub>CH<sub>2</sub>CH<sub>3</sub> *(This is based on butane, except you replace a H with a methyl group (CH<sub>3</sub>) branching at the 2nd C atom.)*
 - isobutanol: (CH<sub>3</sub>)<sub>2</sub>CH<sub></sub>CH<sub>2</sub>CH<sub>2</sub>OH *(This is based on 2-methylbutane, except you replace a H with a hydroxyl group (–OH) at the end of the chain.)*
+- cyclohexane: C<sub>6</sub>H<sub>12</sub>, six CH<sub>2</sub> groups connected in a ring
+- cyclohexanol: C<sub>6</sub>H<sub>11</sub>OH, *(This is based on cyclohexane, except you replace a H with a hydroxyl group (–OH).)* 
 
-
-## Exercise: sketching alkanes
-
-Follow the directions in class for orienting each molecule and then sketching it.
+Follow the directions in class for orienting each molecule. Sketch each one with both Kekule notation and skeletal notation.

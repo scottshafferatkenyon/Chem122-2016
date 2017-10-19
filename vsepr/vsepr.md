@@ -10,7 +10,7 @@ Before you start, make sure you have cloned the entire `Chem122-2016` repository
 
 ## Start a JSmol web app
 
-Change into the directory `vsepr`. List its contents and confirm that the file `jsmol-console.html` exists. Open this file using the command `c9 open`.
+Change into the directory `vsepr`. List its contents and confirm that the file `jmol-console.html` exists. Open this file using the command `c9 open`.
 
 ```bash
     $ cd vsepr
@@ -28,7 +28,7 @@ Click and drag on the web app, which rotates the molecule out of the plane of th
 
 ## Save a static image
 
-Rotate the molecule until you like the perspective. In the Jmol console to the right, enter the command `write image water.png". JSMol will generate an image and prompt you to download to your computer (if you want). 
+Rotate the molecule until you like the perspective. In the Jmol console to the right, enter the command `write image water.png`. JSMol will generate an image and prompt you to download to your computer (if you want). 
 
 
 ## Displaying a different molecule
@@ -42,7 +42,14 @@ The `vsepr` directory contains several files with a `.mol` ending. They are **Mo
 
 (If in doubt, switch back to the Cloud9 console and use `ls` to find out what Molfiles are available.)
 
-## Exercise
+## Exercise: Visual conventions for molecular structures
+
+Chemists have developed visual conventions to show how a geometrical arrangement looks from different angles. We will practice using these conventions by sketching common views of different molecules. Here are a few common conventions. They correspond roughly to principles of drawing in perspective.
+
+- If a bond is coming toward you, out of the plane of the page, draw it as a wedge.
+- If a bond is receding into the distance, into the plane of the page, draw it as a dotted line.
+- If a bond is coming toward you, or receding into the distance, it should appear shorter than if it were in the plane of the page.
+- Atoms and bonds closer to you should obstruct your view of atoms and bonds that are further away. 
 
 Load each of the Molfiles in `vsepr/`. Follow the directions in class for orienting each molecule and then sketching it.
 
