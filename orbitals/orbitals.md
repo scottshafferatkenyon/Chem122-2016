@@ -6,46 +6,68 @@ In this tutorial, you will:
 
 - load the output of a QM calculation with JSmol
 - display the isosurface of a molecular orbital
-- describe each MO's shape relative to atomic orbitals of isolated atoms
+- describe each MO's shape relative to atomic orbitals of isolated atoms (i.e., LCAO notation)
 
 Before you start, make sure you have cloned the entire `Chem122-2016` repository into your Cloud9 workspace, which includes a Jmol server.
 
 
 ## Start a JSmol web app
 
-Change into the directory `orbitals`. List its contents and confirm that the file `JSMol.html` exists. Open this file using the command `c9 open`.
+Change into the directory `orbitals`. List its contents and confirm that the file `jsmol-console.html` exists. Open this file using the command `c9 open`.
 
 ```bash
     $ cd orbitals
     $ ls
-    $ c9 open JSMol.html
+#   N2.out  Ne.out  ethene.out  jmol-console.html  methane.out  orbitals.md
+    $ c9 open jmol-console.html
 ```
 
-The code in this file defines a web app called JSMol. To run it, go to the Cloud9 menu and click **Preview > Live Preview file**. This should cause a mini browser to appear in another pane and display the web app. By default, it should display a 3D representation of a Ne atom, with a wireframe surface of its 1s orbital superimposed on it. Resize the pane to ensure you can see the entire display.
+The code in this file defines a web app called JSMol. To run it, go to the Cloud9 menu and select **Run > Run with... > Apache**; or click the **Run** button if it is available. This should cause a new console to appear, with the message `Starting Apache httpd, serving ...` and showing a link. Click on the link and open it (or copy and paste the link into a new tab. A new browser tab should open and display the web app. By default, it should display a model of a Ne atom.
 
 
 ## Display different orbitals
 
-You can control the JSMol display using its internal menu. Right-click or Control-click anywhere on the app to bring up the menu, and then select: **Surfaces > Molecular Orbitals > #2**. JSMol will replace the 1s orbital with larger, 2s orbital. Repeat this for MO #3. You should now see a 2p orbitals instead; rotate it to confirm its shape. Repeat for MOs #4 and #5, which should look the same but aligned with different directions.
+Information about orbital shape is stored in the file but not displayed by default. You can reveal each orbital using the `MO` command in the Jmol console. Molecular orbitals are numbered from lowest to highest energy, beginning at 1. Orbital #1 is represented by a wireframe surface of the 1s orbital superimposed on the atom.
 
-
-## Display a different molecule
-
-This version of the web app always loads the file `current.out` in the `orbitals/` directory. This is a **GAMESS output** file that was produced by a [quantum-mechanical calculation](https://github.com/garcias/build-gamess#build-gamess) of a molecule's electronic structure. It contains the coordinates of the desired molecule and the shape of each molecular orbital. To display a different molecule, copy its `.out` file to `current.out` using the terminal.
-
-Use the `ls` command to find out what `.out` files are available. One of them should be `N2.out`, which contains coordinates for N<sub>2</sub>. Copy it to `current.out`.
-
-```bash
-    $ ls
-    $ cp N2.out current.out
+```java
+    mo on
+    mo 1
 ```
 
-Then use the `Preview` command in the Cloud9 menu to restart the web app and load the new molecule.
+Each time you use this command and change the number, the previous orbital will be replaced. You can also step through them using `next` instead of a number. In each case, JSMol replace the 1s orbital with the larger, 2s orbital, and then with a 2p orbital. Rotate it to confirm its shape. 
+
+```java
+    mo 2     // shows the 2s
+    mo 3     // shows the 2p
+    mo next  // shows a different 2p
+```
+
+Repeat for MOs #4 and #5, which should look the same but aligned with different directions, as you would expect for p orbitals.
+
+You can change some aesthetic properties, such as the fineness of the wireframe (`MO resolution`) and the colors of in-phase and out-of-phase electron density (`MO color`).
+
+```java
+    MO resolution 16    // finer, but loads slowly
+    MO resolution 8     // coarser, but loads quickly
+    MO color green maroon 
+    MO color peru indigo
+```
+
+## Displaying a different molecule
+
+The `orbitals/` directory contains several files with a `.out` ending. Each is a **GAMESS output** file that was produced by a [quantum-mechanical calculation](https://github.com/garcias/build-gamess#build-gamess) of a molecule's electronic structure. It contains the coordinates of the desired molecule and the shape of each molecular orbital. You can display the molecule in any file by using the `load` command in the Jmol console to the right of the display. Use the `centerat` command to set the origin to the center of gravity (i.e., average) of the molecule. Do this for an N<sub>2</sub> molecule.
+
+```java
+    load Ne.out
+    centerat average
+```
+
+(If in doubt, switch back to the Cloud9 console and use `ls` to find out what other output files are available.)
 
 
 ## Exercise: Nitrogen
 
-Load the GAMESS output for nitrogen. It displays the molecule with the bond axis parallel to the *x* axis. The lowest-energy molecular orbital, MO #1, shows the electron density highly localized to just the atomic centers. Display MO #2, which looks nearly identical except for opposite phase on each atom. 
+Load the GAMESS output for nitrogen. It displays the molecule with the bond axis parallel to the *x* axis. The lowest-energy molecular orbital, MO #1, shows the electron density highly localized to just the atomic centers. MO #2 looks nearly identical except for opposite phase on each atom. 
 
 **Sigma bonding.** Display MO #3, which shows electron density spread throughout both atoms, and is usually notated &sigma;(2s) because it most resembles a combination of a 2s atomic orbital from each N. MO #4 is also spread among both atoms, but has a node half-way between cutting the bond axis, so it is ntoated &sigma;*(2s). Draw representations of these MOs using linear combinations of atomic orbitals.
 
