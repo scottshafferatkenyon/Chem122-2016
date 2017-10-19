@@ -7,17 +7,17 @@ These exercises assume that you have a Cloud9 account and a Linux workspace read
 
 ## Getting started with Cloud9
 
-You will receive an email invitation to join the `chem122` team at Cloud9. Accept the invitation and select **Create new account**. Select a display name, a username, and identify as a **student** doing **coursework**. You should *not* be asked for a credit card. Finish by selecting **Join team**. Check your email and click the activation link to set your password.
+You will receive an email invitation to join the `Chemistry` team at Cloud9. Accept the invitation and select **Create new account**. Select a display name, a username, and identify as a **student** doing **coursework**. You should *not* be asked for a credit card. Finish by selecting **Join team**. Check your email and click the activation link to set your password.
 
 At your dashboard, click **Workspaces > Create a new workspace**. Set the following options:
 
-- Workspace name: `vsepr`
+- Workspace name: `chem122`
 - Team: `Chemical Principles`
 - Hosted workspace: **Public**
 - Clone from Git URL: `https://github.com/garcias/Chem122-2016.git`
 - Choose a template: **Blank**
 
-After a few minutes, Cloud9 will present a layout with a few tabs. Click through the guided tour, reading the comments if you are curious. Close the `README.md` tab to view the `Welcome` tab. Set the following options:
+After a few minutes, Cloud9 will present a layout with a few tabs. Click through the guided tour, reading the comments if you are curious. Close the `README.md` tab to view the `Welcome` tab. (If the `Welcome` tab isn't showing, go to the Cloud9 menu and click **Cloud9 > Welcome Page**.) Set the following options:
 
 - Preset: **Full IDE**
 - Main Theme: *light or dark, whichever is easiest on your eyes*
